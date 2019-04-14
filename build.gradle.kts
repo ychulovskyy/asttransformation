@@ -19,7 +19,6 @@ dependencies {
 }
 
 sourceSets.create("source") {
-    java.srcDir("src/main/java")
     java.srcDir("build/generated-src/antlr/main")
 }
 
