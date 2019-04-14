@@ -1767,6 +1767,7 @@ ELLIPSIS : '...';
 // Whitespace and comments
 //
 
+// Format output !!! https://stackoverflow.com/a/21890729/3231329
 WS  :  [ \t\r\n\u000C]+ -> channel(HIDDEN)
     ;
 
