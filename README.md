@@ -10,3 +10,5 @@ Gradle [ANTLR](https://www.antlr.org/) plugin has been used to build Lexer and P
 SnakeToCamelCase - entry point.  
 NameListener contains logic to rename variables from snake to camel case. 
  
+### Slides
+[Slides](https://docs.google.com/presentation/d/12bzu1ovhika-e-G3aAc-XCUzzjB32P0-4nwboimxzVo/edit?usp=sharing) 
