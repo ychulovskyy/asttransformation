@@ -22,7 +22,11 @@ public class TextBlockListener extends Java8BaseListener {
     @Override
     public void exitLiteral(Java8Parser.LiteralContext ctx) {
         if (canConvertToTextBlock && ctx.StringLiteral() != null) {
-            str += ctx.getText().substring(1, ctx.getText().length() - 1) + "\n";
+            String text = ctx.getText().substring(1, ctx.getText().length() - 1);
+            if (text.endsWith("\\n")) {
+                text = text.substring(0, text.length() - 2);
+            }
+            str += text + "\n";
         } else {
             canConvertToTextBlock = false;
         }

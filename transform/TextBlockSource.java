@@ -10,5 +10,11 @@ public class TextBlockSource {
                 sql +
                 "FROM" +
                 "    table";
+
+        String html = "<html>\n" +
+                "    <body>\n" +
+                "        <p>Hello, world</p>\n" +
+                "    </body>\n" +
+                "</html>\n";
     }
 }
