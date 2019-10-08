@@ -67,6 +67,7 @@ literal
 	|	BooleanLiteral
 	|	CharacterLiteral
 	|	StringLiteral
+	|   TextBlock
 	|	NullLiteral
 	;
 
@@ -1643,6 +1644,21 @@ StringCharacter
 	|	EscapeSequence
 	;
 
+
+TextBlock
+    :   '"""' LineTerminator TextBlockCharacter* '"""'
+    ;
+
+fragment
+LineTerminator
+    :    [\r\n]
+    ;
+
+fragment
+TextBlockCharacter
+	:	~[\r\n]
+	|	EscapeSequence
+	;
 // §3.10.6 Escape Sequences for Character and String Literals
 
 fragment

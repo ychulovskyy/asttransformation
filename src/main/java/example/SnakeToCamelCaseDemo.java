@@ -7,7 +7,7 @@ import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.TokenStreamRewriter;
 
-public class SnakeToCamelCase {
+public class SnakeToCamelCaseDemo {
     public static void main(String[] args) {
         String sourceCode = "class A { int snake_variable_name = 1; }";
 

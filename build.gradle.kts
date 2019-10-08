@@ -23,5 +23,10 @@ sourceSets.create("source") {
 }
 
 configure<JavaPluginConvention> {
-    sourceCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_HIGHER
+    targetCompatibility = JavaVersion.VERSION_HIGHER
+}
+
+tasks.withType<JavaCompile> {
+    options.compilerArgs.add("--enable-preview")
 }
