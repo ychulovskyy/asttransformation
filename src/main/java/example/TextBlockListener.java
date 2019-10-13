@@ -44,7 +44,6 @@ public class TextBlockListener extends Java8BaseListener {
             String initText = str.substring(0, str.length() - 1) + "\"\"\"";
             rewriter.replace(ctx.start, ctx.stop, initText);
         }
-        canConvertToTextBlock = false;
     }
 
     @Override
